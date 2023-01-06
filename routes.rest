@@ -1,0 +1,24 @@
+GET http://localhost:80/contacts
+
+###
+GET http://localhost:80/contacts/63b7ebc5d38610b338039b8e
+
+###
+GET http://localhost:80/contacts/63b7ec38d38610b338039b8f
+
+###
+GET http://localhost:80/contacts/63b7ec9ed38610b338039b90
+
+//Render links
+
+###
+GET https://weekone.onrender.com/contacts
+
+###
+GET https://weekone.onrender.com/contacts/63b7ebc5d38610b338039b8e
+
+###
+GET https://weekone.onrender.com/contacts/63b7ec38d38610b338039b8f
+
+###
+GET https://weekone.onrender.com/contacts/63b7ec9ed38610b338039b90

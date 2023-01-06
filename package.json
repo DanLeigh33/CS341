@@ -4,8 +4,8 @@
   "description": "week one project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.2",
     "serialport": "^10.5.0"
   }
 }
