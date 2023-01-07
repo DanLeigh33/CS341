@@ -3,7 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 
 const getDB  = async (req, res) => {
-    const allDB = await mongodb.getDatabase().db().collection('Contacts').find();
+    const allDB = await mongodb.getDatabase().db('Contactss').collection('Contacts').find();
     allDB.toArray().then((dbs) => {
       res.status(200).json(dbs);
     });
