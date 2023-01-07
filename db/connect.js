@@ -7,8 +7,8 @@ const URI = process.env.URI;
 
 let db;
 
-const connectDB = () => {
-    MongoClient.connect(URI)
+const connectDB = async() => {
+    await MongoClient.connect(URI)
     .then((client) => {
       db = client;
     })
