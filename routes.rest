@@ -22,3 +22,62 @@ GET https://weekone.onrender.com/contacts/63b7ec38d38610b338039b8f
 
 ###
 GET https://weekone.onrender.com/contacts/63b7ec9ed38610b338039b90
+
+//POST PUT AND DELETE
+
+//DEV
+
+###
+
+POST http://localhost:80/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName" : "Kathy",
+    "lastName" : "Bo",
+    "email" : "kathybo@yahgmail.com",
+    "favoriteColor" : "Orange",
+    "birthday" : "2 February"
+}
+###
+PUT http://localhost:80/contacts/63b7ebc5d38610b338039b8e HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName" : "Britt",
+    "lastName" : "Barnes",
+    "email" : "bbarnes@yahgmail.com",
+    "favoriteColor" : "Blue",
+    "birthday" : "4 April"
+}
+###
+DELETE http://localhost:80/contacts/63bc1b81bd028f7443b1be49
+
+//RENDER POST PUT DELETE
+
+###
+POST https://weekone.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+{
+    "firstName" : "Kathy",
+    "lastName" : "Bo",
+    "email" : "kathybo@yahgmail.com",
+    "favoriteColor" : "Orange",
+    "birthday" : "2 February"
+}
+
+###
+PUT https://weekone.onrender.com/contacts/63b7ebc5d38610b338039b8e HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName" : "Britt",
+    "lastName" : "Barnes",
+    "email" : "bbarnes@yahgmail.com",
+    "favoriteColor" : "Blue",
+    "birthday" : "4 April"
+}
+
+###
+DELETE https://weekone.onrender.com/contacts
+
