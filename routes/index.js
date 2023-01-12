@@ -2,6 +2,7 @@
 
 const routes = require('express').Router();
 
-routes.use('/contacts', require('./contacts.js'))
+routes.use('/contacts', require('./contacts.js'));
+routes.use('/', require('./swagger-route.js'));
 
 module.exports = routes;
