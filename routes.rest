@@ -47,11 +47,11 @@ content-type: application/json
     "firstName" : "Britt",
     "lastName" : "Barnes",
     "email" : "bbarnes@yahgmail.com",
-    "favoriteColor" : "Blue",
+    "favoriteColor" : "Black",
     "birthday" : "4 April"
 }
 ###
-DELETE http://localhost:80/contacts/63bc20221c6b6432ea1a14ea
+DELETE http://localhost:80/contacts/63bc26d927abedb55e8e60af
 
 //RENDER POST PUT DELETE
 
