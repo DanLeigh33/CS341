@@ -8,9 +8,10 @@ conDB.connectDB();
 
 app.use(bodyParser.json());
 //gets the routes module from the routes
-app.use((req, res, next) =>{
+app.use((req, res,  next) =>{
   res.setHeader('Access-Control-Allow-Origin', '*');
- next();
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  next();
 })
 app.use('/', require('./routes'));
 
